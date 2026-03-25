@@ -13,29 +13,11 @@ let port = process.env.PORT || 6000
 let app = express()
 app.use(express.json())
 app.use(cookieParser())
-// app.use(cors({
-//     // origin:"http://localhost:5173",
-//     origin:"https://airbnb-ufgz.onrender.com",
-//     credentials:true
-// }))
-
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://airbnb-ufgz.onrender.com"
-];
-
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    } else {
-      return callback(new Error("CORS not allowed"));
-    }
-  },
-  credentials: true
-}));
-
+    // origin:"http://localhost:5173",
+    origin:"https://airbnb-ufgz.onrender.com",
+    credentials:true
+}))
 app.use("/api/auth", authRouter )
 app.use("/api/user", userRouter )
 app.use("/api/listing",listingRouter )
