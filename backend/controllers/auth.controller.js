@@ -17,7 +17,7 @@ export const sighUp=async (req,res) => {
             // secure:process.env.NODE_ENVIRONMENT = "production",
             secure:true;
             // sameSite: "strict",
-            sameSite: "null",
+            sameSite: "none",
         
             maxAge: 7 * 24 * 60 * 60 * 1000
 
@@ -46,7 +46,7 @@ export const login = async (req,res) => {
             httpOnly:true,
             // secure:process.env.NODE_ENVIRONMENT = "production",
             secure:true;
-            sameSite: "null",
+            sameSite: "none",
             maxAge: 7 * 24 * 60 * 60 * 1000
 
 
