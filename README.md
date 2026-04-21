@@ -4,7 +4,7 @@
 The Online Room and Home Booking System is a web-based application that allows users to search and book rooms and homes online. It provides a user-friendly and efficient platform for managing bookings digitally.
 
 ## 🎯 Objective
-- Develop an online booking system  
+- Develop an online booking system  /// shreya contribution
 - Provide user registration and login  
 - Enable room search and booking  
 - Implement billing and invoice generation  
